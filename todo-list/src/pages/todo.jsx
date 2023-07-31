@@ -4,7 +4,7 @@ import { ReactComponent as Shape } from "../assets/shape.svg";
 import { ReactComponent as Elipse } from "../assets/Ellipse 11.svg";
 import { ReactComponent as Clock } from "../assets/clock.svg";
 import { Task } from "../components/task";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Todo = () => {
   const [tasks, setTasks] = useState([
@@ -60,6 +60,12 @@ const Todo = () => {
       hour: now.getHours() + ":" + now.getMinutes(),
     });
   };
+
+// useEffect(() {
+//   useEffect(() => {
+//     const test = localStorage.getItem('test uhuyyy')
+//     console.log(test)
+//   }, []}
 
   return (
     <>
